@@ -2,6 +2,20 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  redirects:async ()=>{
+    return [
+      {
+        source:'/about',
+        destination:'/profile',
+        permanent:true
+      },
+      {
+        source:'/old-blog/:id',
+        destination:'/new-blog/:id',
+        permanent:true
+      }
+    ]
+  }
 }
 
 module.exports = nextConfig

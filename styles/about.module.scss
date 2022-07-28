@@ -1,0 +1,9 @@
+@import 'variables';
+
+.highlight{
+    color:$primary;
+
+    &__button{
+        color:$success
+    }
+}
